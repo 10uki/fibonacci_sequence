@@ -1,0 +1,16 @@
+package fibonacci_sequence;
+
+import java.util.Scanner;
+
+public class Demo extends Fibonacci {
+	public static void main(String[] args) {
+		int n = 0;
+		@SuppressWarnings("resource")
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter amount of numbers in the Fibonacci series: ");
+		n = in.nextInt();
+		System.out.println("Sum of the even Fibonacci Numbers: ");
+		System.out.print(evenFibonacciSum(n));
+		return;	
+	}
+}
