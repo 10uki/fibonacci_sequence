@@ -1,0 +1,18 @@
+package fibonacci_sequence;
+
+public class Fibonacci {
+
+	public static Integer evenFibonacciSum(Integer n) {
+		if (n <= 1) {
+			return n;
+		}
+		int Fib1 = 0;
+		int Fib2 = 1;
+		for (int i = 0; i < n - 1; i++) {
+			int sum = Fib1 + Fib2;
+			Fib1 = Fib2;
+			Fib2 = sum;
+		}
+		return Fib2;
+	}
+}
